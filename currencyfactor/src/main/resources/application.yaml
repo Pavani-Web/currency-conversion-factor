@@ -1,0 +1,7 @@
+spring:
+ application:
+    name: currencyfactor
+ datasource:
+    url: jdbc:h2:mem:currencyfactor
+    username: sa
+    password: password
