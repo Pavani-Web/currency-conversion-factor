@@ -21,9 +21,9 @@ import com.example.currencyfactor.repository.CurrencyConversionFactorRepository;
 
 @RestController
 @RequestMapping("/currecyconversionfactor")
-public class CurrencyConversioFactorController {
+public class CurrencyConversionFactorController {
 	
-	Logger log = LoggerFactory.getLogger(CurrencyConversioFactorController.class);
+	Logger log = LoggerFactory.getLogger(CurrencyConversionFactorController.class);
 	
 	@Autowired
 	private CurrencyConversionFactorRepository currecyFactoryRepository;

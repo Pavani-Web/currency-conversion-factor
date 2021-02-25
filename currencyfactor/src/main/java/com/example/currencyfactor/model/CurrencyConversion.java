@@ -1,5 +1,6 @@
 package com.example.currencyfactor.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,6 +14,7 @@ public class CurrencyConversion {
 	@Id
 	@GeneratedValue
 	private long id;
+	@Column(unique = true)
 	private String countryCode;
 	private Double conversionFactor;
 	
