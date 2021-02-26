@@ -66,7 +66,7 @@ public class CurrencyConversionFactorController {
 		log.info("Entered CurrencyConversioFactorController :: getConversionFactor",code);
 	    Optional<CurrencyConversion> currencyConversion = Optional.of(currecyFactoryRepository.findByCountryCode(code));
 
-	    if (currencyConversion.isPresent()) {
+	    if (currencyConversion != null && currencyConversion.isPresent()) {
 	    log.info("Ended CurrencyConversioFactorController :: getConversionFactor",code);	
 	      return currencyConversion.get().getConversionFactor();
 	    } else {
