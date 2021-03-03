@@ -3,3 +3,9 @@
   
   Swagger url for this project is 
    http:/localhost:8080/swagger-ui/index.html
+
+# Currency conversion factor microservice is registered in the Eureka Server
+
+  Url of Eureka Server is : http://localhost:8761
+
+
