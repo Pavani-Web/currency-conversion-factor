@@ -20,4 +20,19 @@ spring:
   port: 8080
  logging:
    level:
-    org.springframework.web: DEBUG         
+    org.springframework.web: DEBUG
+ security:
+    oauth2:    
+      client:
+        registration:
+          appid:
+            clientId: 995cd0b5-8a11-48cc-861b-0032888ae81f
+            clientSecret: OTJmOTU4YzEtZDUwYi00MjU0LWEzZGQtNjc4YmNmZTkyY2Ji
+            provider: custom-provider
+            client-authentication-method: basic
+            authorization-grant-type: client_credentials
+        provider:
+          custom-provider:
+            issuerUri: https://us-south.appid.cloud.ibm.com/oauth/v4/c3844630-7a07-46b2-aa1f-1fda5651b637  
+               
+            
